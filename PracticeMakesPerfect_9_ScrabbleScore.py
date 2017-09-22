@@ -5,12 +5,13 @@ score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
          "x": 8, "z": 10}
 
 
-scrabble = 'word'
+scrabble = 'NewYorkCity'
 
 def scrabble_score(wordss):
   totalscore = 0
   for char in wordss:
-    if char.lower() in score:
+    char = char.lower()
+    if char in score:
       totalscore = totalscore + score[char]
   return totalscore
    
